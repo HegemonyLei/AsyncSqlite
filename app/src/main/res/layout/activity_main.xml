@@ -7,14 +7,14 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="插入三条"
+        android:text="插入一条"
         android:id="@+id/button1"
         android:layout_centerInParent="true"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="插入一条"
+        android:text="插入三条"
         android:id="@+id/button2"
         android:layout_centerVertical="true"/>
 
@@ -36,6 +36,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="删除"
+        android:text="删除所有"
         android:id="@+id/button5" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

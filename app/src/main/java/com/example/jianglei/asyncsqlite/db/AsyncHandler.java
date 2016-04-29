@@ -8,7 +8,6 @@ import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
 
-import com.example.jianglei.asyncsqlite.DataBase;
 import com.example.jianglei.asyncsqlite.Logger;
 
 import java.util.List;
@@ -18,7 +17,7 @@ import java.util.List;
  * 数据库异步框架
  * Created by jianglei on 2016/4/6.
  */
-public class MasAsyncHandler extends Handler {
+public class AsyncHandler extends Handler {
 
     private static final String TAG = "MasAsyncQueryHandler";
 
@@ -87,9 +86,9 @@ public class MasAsyncHandler extends Handler {
         public SQLiteDatabase result;
     }
 
-    public MasAsyncHandler() {
+    public AsyncHandler() {
         super();
-        synchronized (MasAsyncHandler.class) {
+        synchronized (AsyncHandler.class) {
             if (sLooper == null) {
                 HandlerThread thread = new HandlerThread(TAG);
                 thread.start();

@@ -1,4 +1,4 @@
-package com.example.jianglei.asyncsqlite;
+package com.example.jianglei.asyncsqlite.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

@@ -1,17 +1,8 @@
-package com.example.jianglei.asyncsqlite;
+package com.example.jianglei.asyncsqlite.db;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-
-import com.example.jianglei.asyncsqlite.db.DataBaseOperateToken;
-import com.example.jianglei.asyncsqlite.db.IDeleteCallback;
-import com.example.jianglei.asyncsqlite.db.IMultiInsertCallback;
-import com.example.jianglei.asyncsqlite.db.ISingleInsertCallback;
-import com.example.jianglei.asyncsqlite.db.IUpdateCallback;
-import com.example.jianglei.asyncsqlite.db.MasAsyncHandler;
-import com.example.jianglei.asyncsqlite.db.IInitDatabaseCallback;
-import com.example.jianglei.asyncsqlite.db.IQueryCallback;
 
 import java.util.List;
 
@@ -30,7 +21,7 @@ public class DataBaseOpenHelper {
 
     private static Context sContext;
 
-    private MasAsyncHandler masAsyncHandler;
+    private AsyncHandler masAsyncHandler;
 
     public static void init(Context ctx) {
         sContext = ctx;
@@ -41,7 +32,7 @@ public class DataBaseOpenHelper {
         mContext = context;
         mDbOpenHelper = new DataBase(context.getApplicationContext(), 1);
         // 异步操作数据库初始化
-        masAsyncHandler = new MasAsyncHandler();
+        masAsyncHandler = new AsyncHandler();
     }
 
     public static DataBaseOpenHelper getInstance() {

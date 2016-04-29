@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.StrictMode;
 import android.util.Log;
 
+import com.example.jianglei.asyncsqlite.db.DataBaseOpenHelper;
 import com.example.jianglei.asyncsqlite.db.DataBaseOperateToken;
 import com.example.jianglei.asyncsqlite.db.IInitDatabaseCallback;
 
