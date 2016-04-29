@@ -1,12 +1,12 @@
-package com.example.jianglei.ormsqlitedemo;
+package com.example.jianglei.asyncsqlite;
 
 import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.StrictMode;
 import android.util.Log;
 
-import com.example.jianglei.ormsqlitedemo.db.DataBaseOperateToken;
-import com.example.jianglei.ormsqlitedemo.db.IInitDatabaseCallback;
+import com.example.jianglei.asyncsqlite.db.DataBaseOperateToken;
+import com.example.jianglei.asyncsqlite.db.IInitDatabaseCallback;
 
 /**
  * Created by jianglei on 2016/4/5.

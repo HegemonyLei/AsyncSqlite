@@ -1,4 +1,4 @@
-package com.example.jianglei.ormsqlitedemo.db;
+package com.example.jianglei.asyncsqlite.db;
 
 /**
  * Created by jianglei on 2016/4/7.

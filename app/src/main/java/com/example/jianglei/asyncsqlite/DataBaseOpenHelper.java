@@ -1,17 +1,17 @@
-package com.example.jianglei.ormsqlitedemo;
+package com.example.jianglei.asyncsqlite;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.jianglei.ormsqlitedemo.db.DataBaseOperateToken;
-import com.example.jianglei.ormsqlitedemo.db.IDeleteCallback;
-import com.example.jianglei.ormsqlitedemo.db.IInitDatabaseCallback;
-import com.example.jianglei.ormsqlitedemo.db.IMultiInsertCallback;
-import com.example.jianglei.ormsqlitedemo.db.IQueryCallback;
-import com.example.jianglei.ormsqlitedemo.db.ISingleInsertCallback;
-import com.example.jianglei.ormsqlitedemo.db.IUpdateCallback;
-import com.example.jianglei.ormsqlitedemo.db.MasAsyncHandler;
+import com.example.jianglei.asyncsqlite.db.DataBaseOperateToken;
+import com.example.jianglei.asyncsqlite.db.IDeleteCallback;
+import com.example.jianglei.asyncsqlite.db.IMultiInsertCallback;
+import com.example.jianglei.asyncsqlite.db.ISingleInsertCallback;
+import com.example.jianglei.asyncsqlite.db.IUpdateCallback;
+import com.example.jianglei.asyncsqlite.db.MasAsyncHandler;
+import com.example.jianglei.asyncsqlite.db.IInitDatabaseCallback;
+import com.example.jianglei.asyncsqlite.db.IQueryCallback;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.jianglei.ormsqlitedemo.db;
+package com.example.jianglei.asyncsqlite.db;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -8,8 +8,8 @@ import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
 
-import com.example.jianglei.ormsqlitedemo.DataBase;
-import com.example.jianglei.ormsqlitedemo.Logger;
+import com.example.jianglei.asyncsqlite.DataBase;
+import com.example.jianglei.asyncsqlite.Logger;
 
 import java.util.List;
 

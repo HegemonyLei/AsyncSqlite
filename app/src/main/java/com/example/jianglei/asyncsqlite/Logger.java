@@ -1,4 +1,4 @@
-package com.example.jianglei.ormsqlitedemo;
+package com.example.jianglei.asyncsqlite;
 
 import android.util.Log;
 

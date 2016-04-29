@@ -1,4 +1,4 @@
-package com.example.jianglei.ormsqlitedemo.db;
+package com.example.jianglei.asyncsqlite.db;
 
 import android.database.Cursor;
 
