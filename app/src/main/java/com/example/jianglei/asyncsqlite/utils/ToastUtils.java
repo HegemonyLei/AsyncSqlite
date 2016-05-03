@@ -1,4 +1,4 @@
-package com.example.jianglei.asyncsqlite;
+package com.example.jianglei.asyncsqlite.utils;
 
 import android.content.Context;
 import android.widget.Toast;

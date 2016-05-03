@@ -1,4 +1,4 @@
-package com.example.jianglei.asyncsqlite;
+package com.example.jianglei.asyncsqlite.activity;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -8,14 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
-import com.example.jianglei.asyncsqlite.db.DataBase;
-import com.example.jianglei.asyncsqlite.db.DataBaseOpenHelper;
-import com.example.jianglei.asyncsqlite.db.DataBaseOperateToken;
-import com.example.jianglei.asyncsqlite.db.IDeleteCallback;
-import com.example.jianglei.asyncsqlite.db.IMultiInsertCallback;
-import com.example.jianglei.asyncsqlite.db.IQueryCallback;
-import com.example.jianglei.asyncsqlite.db.ISingleInsertCallback;
-import com.example.jianglei.asyncsqlite.db.IUpdateCallback;
+import com.example.jianglei.asyncsqlite.model.bean.Info;
+import com.example.jianglei.asyncsqlite.adapter.MyAdapter;
+import com.example.jianglei.asyncsqlite.R;
+import com.example.jianglei.asyncsqlite.utils.ToastUtils;
+import com.example.jianglei.asyncsqlite.model.db.DataBase;
+import com.example.jianglei.asyncsqlite.model.db.DataBaseOpenHelper;
+import com.example.jianglei.asyncsqlite.model.db.DataBaseOperateToken;
+import com.example.jianglei.asyncsqlite.model.db.IDeleteCallback;
+import com.example.jianglei.asyncsqlite.model.db.IMultiInsertCallback;
+import com.example.jianglei.asyncsqlite.model.db.IQueryCallback;
+import com.example.jianglei.asyncsqlite.model.db.ISingleInsertCallback;
+import com.example.jianglei.asyncsqlite.model.db.IUpdateCallback;
 
 import java.util.ArrayList;
 import java.util.List;

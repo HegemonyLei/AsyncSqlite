@@ -1,4 +1,4 @@
-package com.example.jianglei.asyncsqlite;
+package com.example.jianglei.asyncsqlite.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.example.jianglei.asyncsqlite.R;
+import com.example.jianglei.asyncsqlite.model.bean.Info;
 
 import java.util.List;
 

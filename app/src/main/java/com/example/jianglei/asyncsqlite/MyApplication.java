@@ -5,9 +5,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.StrictMode;
 import android.util.Log;
 
-import com.example.jianglei.asyncsqlite.db.DataBaseOpenHelper;
-import com.example.jianglei.asyncsqlite.db.DataBaseOperateToken;
-import com.example.jianglei.asyncsqlite.db.IInitDatabaseCallback;
+import com.example.jianglei.asyncsqlite.model.db.DataBaseOpenHelper;
+import com.example.jianglei.asyncsqlite.model.db.DataBaseOperateToken;
+import com.example.jianglei.asyncsqlite.model.db.IInitDatabaseCallback;
 
 /**
  * Created by jianglei on 2016/4/5.

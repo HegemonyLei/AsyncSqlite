@@ -1,4 +1,4 @@
-package com.example.jianglei.asyncsqlite.db;
+package com.example.jianglei.asyncsqlite.model.db;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -8,7 +8,7 @@ import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
 
-import com.example.jianglei.asyncsqlite.Logger;
+import com.example.jianglei.asyncsqlite.utils.Logger;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ import java.util.List;
  * 数据库异步框架
  * Created by jianglei on 2016/4/6.
  */
-public class AsyncHandler extends Handler {
+public class AsyncSqliteHandler extends Handler {
 
     private static final String TAG = "MasAsyncQueryHandler";
 
@@ -86,9 +86,9 @@ public class AsyncHandler extends Handler {
         public SQLiteDatabase result;
     }
 
-    public AsyncHandler() {
+    public AsyncSqliteHandler() {
         super();
-        synchronized (AsyncHandler.class) {
+        synchronized (AsyncSqliteHandler.class) {
             if (sLooper == null) {
                 HandlerThread thread = new HandlerThread(TAG);
                 thread.start();

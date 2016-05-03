@@ -1,4 +1,4 @@
-package com.example.jianglei.asyncsqlite.db;
+package com.example.jianglei.asyncsqlite.model.db;
 
 /**
  * 数据库异步操作结果回调

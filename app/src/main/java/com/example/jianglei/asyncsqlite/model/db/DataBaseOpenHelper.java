@@ -1,4 +1,4 @@
-package com.example.jianglei.asyncsqlite.db;
+package com.example.jianglei.asyncsqlite.model.db;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -21,7 +21,7 @@ public class DataBaseOpenHelper {
 
     private static Context sContext;
 
-    private AsyncHandler masAsyncHandler;
+    private AsyncSqliteHandler masAsyncHandler;
 
     public static void init(Context ctx) {
         sContext = ctx;
@@ -32,7 +32,7 @@ public class DataBaseOpenHelper {
         mContext = context;
         mDbOpenHelper = new DataBase(context.getApplicationContext(), 1);
         // 异步操作数据库初始化
-        masAsyncHandler = new AsyncHandler();
+        masAsyncHandler = new AsyncSqliteHandler();
     }
 
     public static DataBaseOpenHelper getInstance() {

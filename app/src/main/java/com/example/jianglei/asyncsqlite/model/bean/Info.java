@@ -1,4 +1,4 @@
-package com.example.jianglei.asyncsqlite;
+package com.example.jianglei.asyncsqlite.model.bean;
 
 /**
  * Created by jianglei on 2016/4/29.
