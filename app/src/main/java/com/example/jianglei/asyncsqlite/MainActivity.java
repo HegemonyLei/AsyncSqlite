@@ -11,11 +11,11 @@ import android.widget.ListView;
 import com.example.jianglei.asyncsqlite.db.DataBase;
 import com.example.jianglei.asyncsqlite.db.DataBaseOpenHelper;
 import com.example.jianglei.asyncsqlite.db.DataBaseOperateToken;
+import com.example.jianglei.asyncsqlite.db.IDeleteCallback;
 import com.example.jianglei.asyncsqlite.db.IMultiInsertCallback;
 import com.example.jianglei.asyncsqlite.db.IQueryCallback;
 import com.example.jianglei.asyncsqlite.db.ISingleInsertCallback;
 import com.example.jianglei.asyncsqlite.db.IUpdateCallback;
-import com.example.jianglei.ormsqlitedemo.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -118,7 +118,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 });
                 break;
             case R.id.button5:
-                DataBaseOpenHelper.getInstance().deleteValues(DataBaseOperateToken.TOKEN_DELETE_TABLE, DataBase.TABLE, null, null, null);
+                DataBaseOpenHelper.getInstance().deleteValues(DataBaseOperateToken.TOKEN_DELETE_TABLE, DataBase.TABLE, null, null, new IDeleteCallback() {
+                    @Override
+                    public void onDeleteComplete(int token, long result) {
+                        ToastUtils.makeText(MainActivity.this, "删除成功");
+                        queryAllInfo();
+                    }
+
+                    @Override
+                    public void onAsyncOperateFailed() {
+                        ToastUtils.makeText(MainActivity.this, "删除失败");
+                    }
+                });
                 queryAllInfo();
                 break;
             default:break;
@@ -147,6 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 infos.add(info);
             }
             adapter.notifyDataSetChanged();
+            cursor.close();
         }
     }
 }

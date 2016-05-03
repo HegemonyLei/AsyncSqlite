@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jianglei.ormsqlitedemo">
+    package="com.example.jianglei.asyncsqlite">
 
     <application
         android:name="com.example.jianglei.asyncsqlite.MyApplication"
